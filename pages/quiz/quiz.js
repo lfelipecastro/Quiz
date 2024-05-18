@@ -35,7 +35,7 @@ const perguntaTres = {
 
 let indice = 0;
 let index = 0;
-let respCertas = 0;
+let valorRespCertas = 0;
 const perguntasArray = [perguntaUm, perguntaDois, perguntaTres];
 const respInseridasArray = [0,0,0];
 
@@ -47,11 +47,19 @@ function iniciarQuiz(){
     altD.innerText = perguntasArray[index].altD;
 }
 
+function valorPontuacao(){
+    let aux;
+    for(aux = 0; aux < perguntasArray.length; aux++){
+        if(perguntasArray[aux].respCerta === respInseridasArray[aux]){
+            valorRespCertas += 1;
+        }
+    }
+}
+
 function prosseguirQuiz(){
-    if(index >= perguntasArray.length-1){
-        alert("Você completou o quiz!" + index);
-        history.back();
-        //window.location.href("../index/index.html");
+    if(index >= perguntasArray.length - 1){
+        valorPontuacao();
+        window.location.href = "../resultado/resultado.html?acertos="+valorRespCertas;
         index = 0;
     }else{
         index += 1;
@@ -61,8 +69,8 @@ function prosseguirQuiz(){
 
 function voltar(){
     if(index <= 0){
-        window.location.href("../index/index.html");
         index = 0;
+        history.back();
     }else{
         index-=1;
         iniciarQuiz();
@@ -72,37 +80,21 @@ function voltar(){
 function selecionaA(){
     indice = 1;
     respInseridasArray[index] = indice;
-    if(perguntasArray[index].respCerta === indice){
-        respCertas += 1;
-    }
-    alert(respCertas);
 }
 
 function selecionaB(){
     indice = 2;
     respInseridasArray[index] = indice;
-    if(perguntasArray[index].respCerta === indice){
-        respCertas += 1;
-    }
-    alert(respCertas);
 }
 
 function selecionaC(){
     indice = 3;
     respInseridasArray[index] = indice;
-    if(perguntasArray[index].respCerta === indice){
-        respCertas += 1;
-    }
-    alert(respCertas);
 }
 
 function selecionaD(){
     indice = 4;
     respInseridasArray[index] = indice;
-    if(perguntasArray[index].respCerta === indice){
-        respCertas += 1;
-    }
-    alert(respCertas);
 }
 
 iniciarQuiz();
