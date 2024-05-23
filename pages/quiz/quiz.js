@@ -3,33 +3,33 @@ const altA = document.getElementById('alternativa-a');
 const altB = document.getElementById('alternativa-b');
 const altC = document.getElementById('alternativa-c');
 const altD = document.getElementById('alternativa-d');
-const botaoQuiz = document.getElementById('botao-quiz');
+const botaoQuiz = document.getElementById('botao-continuar');
 const botaoVoltar = document.getElementById('botao-voltar');
 
 const perguntaUm = {
     pergunta : '1. Como podemos definir um Algoritmo?',
-    altA : 'a. Sequência de comandos ordenados, infinitos e ambíguos que são empregados para executar uma tarefa.',
-    altB : 'b. Sequência de instruções ordenadas, infinitas e não-ambíguas que são empregadas para executar uma tarefa.',
-    altC : 'c. Sequência de instruções ordenadas, finitas e não-ambíguas que são empregadas para executar uma tarefa.',
-    altD : 'd. Sequência de comandos ordenados, infinitos e não-ambíguos que são empregados para executar uma tarefa.',
+    altA : 'Sequência de comandos ordenados, infinitos e ambíguos que são empregados para executar uma tarefa.',
+    altB : 'Sequência de instruções ordenadas, infinitas e não-ambíguas que são empregadas para executar uma tarefa.',
+    altC : 'Sequência de instruções ordenadas, finitas e não-ambíguas que são empregadas para executar uma tarefa.',
+    altD : 'Sequência de comandos ordenados, infinitos e não-ambíguos que são empregados para executar uma tarefa.',
     respCerta : 3,
 }
 
 const perguntaDois = {
     pergunta : '2. Qual dos seguintes itens possui apenas tipos válidos usados em lógica de programação (tipos primitivos)?',
-    altA : 'a. Inteiro, Temporal, Caractere, Double',
-    altB : 'b. Booleano, Real, Inteiro, Irracional',
-    altC : 'c. Inteiro, Booleano, Tipografia, Double',
-    altD : 'd. Inteiro, Booleano, Caractere, Double',
+    altA : 'Inteiro, Temporal, Caractere, Double',
+    altB : 'Booleano, Real, Inteiro, Irracional',
+    altC : 'Inteiro, Booleano, Tipografia, Double',
+    altD : 'Inteiro, Booleano, Caractere, Double',
     respCerta : 4,
 }
 
 const perguntaTres = {
     pergunta : '3.7. É possível ordenar valores numéricos já armazenados em um vetor de números decimais?',
-    altA : 'a. Não, somente é possível ter valores em ordem se os valores forem inseridos em ordem',
-    altB : 'b. Sim, mas somente se os números forem inteiros. Números decimais não podem ser ordenados',
-    altC : 'c. Sim, mas para isso é necessário usar um algoritmo para ordenação de vetores',
-    altD : 'd. Vetores não permitem o armazenamento de números decimais, somente números reais',
+    altA : 'Não, somente é possível ter valores em ordem se os valores forem inseridos em ordem',
+    altB : 'Sim, mas somente se os números forem inteiros. Números decimais não podem ser ordenados',
+    altC : 'Sim, mas para isso é necessário usar um algoritmo para ordenação de vetores',
+    altD : 'Vetores não permitem o armazenamento de números decimais, somente números reais',
     respCerta : 3,
 }
 

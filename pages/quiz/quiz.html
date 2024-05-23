@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div class="container">
-        <div id="pergunta">Pergunta</div>
-        <button id="alternativa-a">Alternativa A</button>
-        <button id="alternativa-b">Alternativa B</button>
-        <button id="alternativa-c">Alternativa C</button>
-        <button id="alternativa-d">Alternativa D</button>
-        <button id="botao-voltar">Voltar</button>
-        <button id="botao-quiz" class="botao">Continuar</button>
+    <div class="container-quiz">
+        <div id="pergunta" class="estiloTxt">Pergunta</div>
+        <div id="alternativas-container">
+            <button id="alternativa-a" class="botao-quiz">Alternativa A</button>
+            <button id="alternativa-b" class="botao-quiz">Alternativa B</button>
+        </div>
+        <div id="alternativas-container">
+            <button id="alternativa-c" class="botao-quiz">Alternativa C</button>
+            <button id="alternativa-d" class="botao-quiz">Alternativa D</button>
+        </div>
+        <div id="botoes-quiz">
+            <button id="botao-voltar" class="botao">Voltar</button>
+            <button id="botao-continuar" class="botao">Continuar</button>
+        </div>
     </div>
     <script src="quiz.js" defer></script>
 </body>

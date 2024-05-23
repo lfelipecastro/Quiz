@@ -1,20 +1,131 @@
+/* ESTILO GLOBAL */
 body{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: url("../images/fundo-quiz.png");
-    background-position: center center;
+    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .container{
+    width: 50%;
+    padding: 0 40px 30px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: blueviolet;
     border-radius: 15px;
-    border-style: solid;
+    box-shadow: 0px 0px 8px #00000085;
+    resize: none;
+}
+
+.botao{
+    background-color: #3f1fcf;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 0;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 8px #0000004d;
+    transition: .2s;
+}
+
+.botao:hover{
+    transform: scale(1.05);
+}
+
+/* ESTILO TELA DE INDEX */
+#titulo{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.estiloTxt{
+    color: white;
+    font-size: 20px;
+}
+
+#informacao{
+    margin-top: 0;
+    margin-bottom: 42px;
+}
+
+/* ESTILO DA TELA DO QUIZ */
+.container-quiz{
+    height: auto;
+    width: 50%;
+    overflow: hidden;
+    padding: 0 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px #00000085;
+    object-fit: cover;
+}
+
+#pergunta{
+    font-weight: bold;
+    margin: 30px 0 30px 0;
+    font-size: 22px;
+}
+
+#alternativas-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 7px;
+    margin: 4px;
+}
+
+#botoes-quiz{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.botao-quiz{
+    height: auto;
+    width: auto;
+    min-height:180px;
+    min-width: 50%;
+    background-color: #3f1fcf;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    box-shadow: 0px 0px 4px #0000004d;
+    transition: .1s;
+}
+
+.botao-quiz:hover{
+    transform: scale(1.01);
+}
+
+/* TELA RESPONSIVA PARA CELULAR */
+@media screen and (max-width: 768px){
+    #alternativas-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        gap: 7px;
+        margin: 2px;
+    }
 }
