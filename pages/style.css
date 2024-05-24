@@ -12,6 +12,7 @@ body{
 }
 
 .container{
+    color: white;
     width: 50%;
     padding: 0 40px 30px 40px;
     display: flex;
@@ -40,17 +41,16 @@ body{
     transform: scale(1.05);
 }
 
+.estiloTxt{
+    font-weight: bold;
+    font-size: 20px;
+}
+
 /* ESTILO TELA DE INDEX */
 #titulo{
-    color: white;
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 14px;
-}
-
-.estiloTxt{
-    color: white;
-    font-size: 20px;
 }
 
 #informacao{
@@ -60,6 +60,7 @@ body{
 
 /* ESTILO DA TELA DO QUIZ */
 .container-quiz{
+    color: white;
     height: auto;
     width: 50%;
     overflow: hidden;
@@ -114,6 +115,41 @@ body{
 
 .botao-quiz:hover{
     transform: scale(1.01);
+}
+
+.botao-quiz-pressionado{
+    height: auto;
+    width: auto;
+    min-height:180px;
+    min-width: 50%;
+    background-color: #1F6FCF;
+    color: black;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    box-shadow: 0px 0px 4px #0000004d;
+    transition: .1s;
+}
+
+.botao-quiz-pressionado:hover{
+    transform: scale(1.01);
+}
+
+/* TELA DE RESULTADO */
+#titulo-resultado{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+#mensagem{
+    margin-top: 10px;
+}
+
+#respostas{
+    margin-top: 10px;
+    margin-bottom: 27px;
 }
 
 /* TELA RESPONSIVA PARA CELULAR */
